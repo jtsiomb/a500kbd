@@ -1,0 +1,7 @@
+*.o
+*.swp
+*.d
+*.bak
+*.bck
+*.dcm
+*-cache.lib
