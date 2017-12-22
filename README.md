@@ -11,6 +11,10 @@ and translates scancodes to the keyboard signals expected by the Amiga.
 
 See pictures of the PS/2 controller in my Amiga: https://imgur.com/a/rhXS8
 
+It has been reported that this works with the A600 too, by soldering directly
+on the keyboard clock and data lines. I guess it might work with the A1200 as
+well, so if anyone tries it please let me know.
+
 Directory structure:
 
   * `hw` - hardware: kicad files and pdf schematics.
