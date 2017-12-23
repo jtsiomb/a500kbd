@@ -10,11 +10,12 @@
 
 static void resync(void);
 
+static unsigned char prev_keycode = 0xff;
+static unsigned char capslk;
+
 void amikb_sendkey(unsigned char keycode, int press)
 {
 	int i;
-	static unsigned char prev_keycode = 0xff;
-	static unsigned char capslk;
 
 	if(keycode == 0x62) {
 		/* caps lock doesn't get a key release event when the key is released
@@ -84,6 +85,9 @@ void amikb_reset(void)
 	_delay_ms(10);
 	PORTD |= ARST_BIT;
 	DDRD &= ~ARST_BIT;
+
+	prev_keycode = 0xff;
+	capslk = 0;
 	sei();
 }
 
