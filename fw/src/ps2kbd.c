@@ -133,9 +133,9 @@ int ps2setled(unsigned char state)
 	return 0;
 }
 
-void ps2clearbuf(){
+void ps2clearbuf(void)
+{
 	key_rd = key_wr;
-	return;
 }
 
 ISR(INT0_vect)

@@ -11,7 +11,7 @@ int ps2write(unsigned char c);
 unsigned char ps2read(void);
 int ps2pending(void);
 int ps2wait(unsigned int timeout);
-void ps2clearbuf();
+void ps2clearbuf(void);
 
 int ps2setled(unsigned char state);
 

@@ -128,7 +128,7 @@ int main(void)
 				keyflags = 0;
 
 				reset_timer();
-				while(get_msec() < RESET_WAIT) {}
+				while(get_msec() < RESET_WAIT);
 				ps2clearbuf();
 
 				break;
