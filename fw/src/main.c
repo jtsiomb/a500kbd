@@ -22,9 +22,9 @@ enum {
 #define KF_TRANSIENT	0x0f
 #define KF_STICKY		0xf0
 
+#define RESET_WAIT 1000
+
 static unsigned char led_state;
-static unsigned long ignore_start;
-#define IGNORE_DUR	1500
 
 int main(void)
 {
@@ -67,13 +67,6 @@ int main(void)
 		}
 
 		c = ps2read();
-		if(ignore_start) {
-			if(get_msec() - ignore_start < IGNORE_DUR) {
-				continue;
-			}
-			ignore_start = 0;
-		}
-
 		switch(c) {
 		case 0xe0:	/* extended */
 			keyflags |= KF_EXT;
@@ -132,11 +125,12 @@ int main(void)
 				printf("CTRL - AMIGA - AMIGA!\r\n");
 				amikb_reset();
 
-				/* ignore input for a period of time after performing a reset to avoid
-				 * spurious input
-				 */
 				keyflags = 0;
-				ignore_start = get_msec();
+
+				reset_timer();
+				while(get_msec() < RESET_WAIT) {}
+				ps2clearbuf();
+
 				break;
 			}
 

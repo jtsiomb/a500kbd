@@ -7,7 +7,7 @@
 
 #define TIMEOUT	100
 
-#define BUF_SZ	16
+#define BUF_SZ	32
 #define BUF_IDX_MASK	(BUF_SZ - 1)
 #define NEXT_IDX(x) (((x) + 1) & BUF_IDX_MASK)
 static volatile unsigned char keybuf[BUF_SZ];
@@ -131,6 +131,11 @@ int ps2setled(unsigned char state)
 	if(c != PS2_ACK) return -1;
 
 	return 0;
+}
+
+void ps2clearbuf(){
+	key_rd = key_wr;
+	return;
 }
 
 ISR(INT0_vect)
