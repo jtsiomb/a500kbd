@@ -25,6 +25,7 @@ enum {
 #define RESET_WAIT 1000
 
 static unsigned char led_state;
+static unsigned char layout;
 
 int main(void)
 {
@@ -91,7 +92,7 @@ int main(void)
 			} else if(keyflags & KF_EXT1) {
 			} else {
 				if(c < KEYMAP_NORMAL_SIZE) {
-					keycode = keymap_normal[(int)c];
+					keycode = keymap_normal[(int)layout][(int)c];
 				}
 			}
 
@@ -115,6 +116,19 @@ int main(void)
 					keyflags |= KF_RAMIGA;
 				else
 					keyflags &= ~KF_RAMIGA;
+				break;
+
+			case EXTRA_F11:
+				// The amiga does not have an F11 key, so
+				// we can use as a nice hook to do something
+				// else
+				if(press) {
+					// Toggle between Colemak and QWERTY
+					layout = !layout;
+					// Use numlock led to show layout status
+					led_state ^= PS2LED_NUMLK;
+					ps2setled(led_state);
+				}
 				break;
 
 			default:
