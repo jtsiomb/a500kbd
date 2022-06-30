@@ -1,37 +1,5 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:a500kbd
-LIBS:switches
-LIBS:a500kbd-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -46,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ps2conn U3
+L a500kbd-rescue:ps2conn U3
 U 1 1 59DD9993
 P 7700 3950
 F 0 "U3" H 7450 3700 60  0000 C CNN
@@ -57,7 +25,7 @@ F 3 "" H 7700 3950 60  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L ATMEGA88-20PU U1
+L a500kbd-rescue:ATMEGA88-20PU U1
 U 1 1 59DD9A9D
 P 4800 3800
 F 0 "U1" H 3950 5100 50  0000 L BNN
@@ -68,7 +36,7 @@ F 3 "" H 4800 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR12
+L a500kbd-rescue:GND #PWR12
 U 1 1 59DD9D4A
 P 7100 3950
 F 0 "#PWR12" H 7100 3700 50  0001 C CNN
@@ -79,7 +47,7 @@ F 3 "" H 7100 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR14
+L a500kbd-rescue:VCC #PWR14
 U 1 1 59DD9DD3
 P 8100 3950
 F 0 "#PWR14" H 8100 3800 50  0001 C CNN
@@ -92,7 +60,7 @@ $EndComp
 Text Label 5800 4450 0    60   ~ 0
 PCLK
 $Comp
-L AVR-ISP-6 CON1
+L a500kbd-rescue:AVR-ISP-6 CON1
 U 1 1 59DD9E89
 P 6750 3150
 F 0 "CON1" H 6645 3390 50  0000 C CNN
@@ -103,7 +71,7 @@ F 3 "" H 6725 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR11
+L a500kbd-rescue:VCC #PWR11
 U 1 1 59DD9F46
 P 7100 3050
 F 0 "#PWR11" H 7100 2900 50  0001 C CNN
@@ -114,7 +82,7 @@ F 3 "" H 7100 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR10
+L a500kbd-rescue:GND #PWR10
 U 1 1 59DD9F84
 P 6850 3300
 F 0 "#PWR10" H 6850 3050 50  0001 C CNN
@@ -125,7 +93,7 @@ F 3 "" H 6850 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Crystal Y1
+L a500kbd-rescue:Crystal Y1
 U 1 1 59DDA0C7
 P 6050 3400
 F 0 "Y1" H 6050 3550 50  0000 C CNN
@@ -136,7 +104,7 @@ F 3 "" H 6050 3400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C3
+L a500kbd-rescue:C C3
 U 1 1 59DDA1C6
 P 6050 3700
 F 0 "C3" H 6075 3800 50  0000 L CNN
@@ -147,7 +115,7 @@ F 3 "" H 6050 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C4
+L a500kbd-rescue:C C4
 U 1 1 59DDA28B
 P 6300 3700
 F 0 "C4" H 6325 3800 50  0000 L CNN
@@ -158,7 +126,7 @@ F 3 "" H 6300 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR8
+L a500kbd-rescue:GND #PWR8
 U 1 1 59DDA306
 P 6300 3850
 F 0 "#PWR8" H 6300 3600 50  0001 C CNN
@@ -169,7 +137,7 @@ F 3 "" H 6300 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR3
+L a500kbd-rescue:VCC #PWR3
 U 1 1 59DDA579
 P 3800 2650
 F 0 "#PWR3" H 3800 2500 50  0001 C CNN
@@ -180,7 +148,7 @@ F 3 "" H 3800 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR4
+L a500kbd-rescue:GND #PWR4
 U 1 1 59DDA5C3
 P 3800 4950
 F 0 "#PWR4" H 3800 4700 50  0001 C CNN
@@ -192,7 +160,7 @@ F 3 "" H 3800 4950 50  0001 C CNN
 $EndComp
 NoConn ~ 3800 3250
 $Comp
-L C C2
+L a500kbd-rescue:C C2
 U 1 1 59DDA7B2
 P 3600 4000
 F 0 "C2" H 3625 4100 50  0000 L CNN
@@ -203,7 +171,7 @@ F 3 "" H 3600 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR2
+L a500kbd-rescue:GND #PWR2
 U 1 1 59DDAB03
 P 3600 4150
 F 0 "#PWR2" H 3600 3900 50  0001 C CNN
@@ -214,7 +182,7 @@ F 3 "" H 3600 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR1
+L a500kbd-rescue:VCC #PWR1
 U 1 1 59DDABEE
 P 3600 3850
 F 0 "#PWR1" H 3600 3700 50  0001 C CNN
@@ -225,7 +193,7 @@ F 3 "" H 3600 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C1
+L a500kbd-rescue:C C1
 U 1 1 59DDADD5
 P 3300 4000
 F 0 "C1" H 3325 4100 50  0000 L CNN
@@ -236,7 +204,7 @@ F 3 "" H 3300 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L a500kbd_conn U2
+L a500kbd-rescue:a500kbd_conn U2
 U 1 1 59DDBCD1
 P 6150 5500
 F 0 "U2" H 5900 5100 60  0000 C CNN
@@ -247,7 +215,7 @@ F 3 "" H 6450 4850 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR7
+L a500kbd-rescue:GND #PWR7
 U 1 1 59DDC6E9
 P 6050 6050
 F 0 "#PWR7" H 6050 5800 50  0001 C CNN
@@ -274,7 +242,7 @@ NoConn ~ 5700 3800
 NoConn ~ 5700 3900
 NoConn ~ 5700 4000
 $Comp
-L CONN_01X04 J1
+L a500kbd-rescue:CONN_01X04 J1
 U 1 1 59DDD3D1
 P 6950 3750
 F 0 "J1" H 6950 4000 50  0000 C CNN
@@ -285,7 +253,7 @@ F 3 "" H 6950 3750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L VCC #PWR9
+L a500kbd-rescue:VCC #PWR9
 U 1 1 59DDD4D2
 P 6650 3750
 F 0 "#PWR9" H 6650 3600 50  0001 C CNN
@@ -310,9 +278,9 @@ Wire Wire Line
 Wire Wire Line
 	6600 3250 6550 3250
 Wire Wire Line
-	6550 4100 6550 3250
+	6550 4100 6550 3500
 Wire Wire Line
-	5700 3250 6300 3250
+	5700 3250 6050 3250
 Wire Wire Line
 	6300 3250 6300 3550
 Connection ~ 6050 3250
@@ -339,7 +307,7 @@ Wire Wire Line
 Wire Wire Line
 	5800 3350 5700 3350
 Wire Wire Line
-	5700 4100 6550 4100
+	5700 4100 5850 4100
 Wire Wire Line
 	6600 3150 5700 3150
 Wire Wire Line
@@ -378,9 +346,9 @@ NoConn ~ 5700 3600
 NoConn ~ 5700 2750
 NoConn ~ 5700 2850
 Wire Wire Line
-	5700 4550 8100 4550
+	5700 4550 7350 4550
 $Comp
-L VCC #PWR6
+L a500kbd-rescue:VCC #PWR6
 U 1 1 59E2D903
 P 6050 5050
 F 0 "#PWR6" H 6050 4900 50  0001 C CNN
@@ -397,9 +365,9 @@ PDATA
 Text Label 5800 4750 0    60   ~ 0
 ADATA
 Wire Wire Line
-	5700 4750 8300 4750
+	5700 4750 7450 4750
 $Comp
-L R R2
+L a500kbd-rescue:R R2
 U 1 1 59E3CD35
 P 8100 4400
 F 0 "R2" V 8180 4400 50  0000 C CNN
@@ -410,7 +378,7 @@ F 3 "" H 8100 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_DPDT_x2 SW2
+L a500kbd-rescue:SW_DPDT_x2 SW2
 U 1 1 59E3D07D
 P 7900 5050
 F 0 "SW2" H 7900 5220 50  0000 C CNN
@@ -421,7 +389,7 @@ F 3 "" H 7900 5050 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SW_DPDT_x2 SW2
+L a500kbd-rescue:SW_DPDT_x2 SW2
 U 2 1 59E3D417
 P 7900 5450
 F 0 "SW2" H 7900 5620 50  0000 C CNN
@@ -432,7 +400,7 @@ F 3 "" H 7900 5450 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L a500kbd_conn U4
+L a500kbd-rescue:a500kbd_conn U4
 U 1 1 59E3D757
 P 9000 5500
 F 0 "U4" H 8750 5100 60  0000 C CNN
@@ -464,7 +432,7 @@ Wire Wire Line
 	7450 4950 7700 4950
 Connection ~ 7350 4550
 $Comp
-L R R3
+L a500kbd-rescue:R R3
 U 1 1 59E3E98A
 P 8300 4400
 F 0 "R3" V 8380 4400 50  0000 C CNN
@@ -478,7 +446,7 @@ Wire Wire Line
 	8300 4750 8300 4550
 Connection ~ 7450 4750
 $Comp
-L VCC #PWR15
+L a500kbd-rescue:VCC #PWR15
 U 1 1 59E3EAB6
 P 8200 4250
 F 0 "#PWR15" H 8200 4100 50  0001 C CNN
@@ -489,7 +457,7 @@ F 3 "" H 8200 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8100 4250 8300 4250
+	8100 4250 8200 4250
 Connection ~ 8200 4250
 Wire Wire Line
 	6650 5300 7200 5300
@@ -512,7 +480,7 @@ Wire Wire Line
 Wire Wire Line
 	5800 4850 5800 6300
 Wire Wire Line
-	8500 6300 5800 6300
+	8500 6300 6850 6300
 Wire Wire Line
 	6850 6300 6850 5550
 Wire Wire Line
@@ -523,7 +491,7 @@ Connection ~ 6850 6300
 Text Label 6950 6300 0    60   ~ 0
 AMIGA_RESET
 $Comp
-L GND #PWR17
+L a500kbd-rescue:GND #PWR17
 U 1 1 59E3F2E8
 P 9100 6050
 F 0 "#PWR17" H 9100 5800 50  0001 C CNN
@@ -534,7 +502,7 @@ F 3 "" H 9100 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR16
+L a500kbd-rescue:VCC #PWR16
 U 1 1 59E3F32F
 P 9100 5050
 F 0 "#PWR16" H 9100 4900 50  0001 C CNN
@@ -547,7 +515,7 @@ $EndComp
 Wire Wire Line
 	6650 5700 8500 5700
 Wire Wire Line
-	6650 5800 8500 5800
+	6650 5800 6750 5800
 Wire Wire Line
 	5700 4950 5850 4950
 Wire Wire Line
@@ -558,7 +526,7 @@ Wire Wire Line
 	6750 6250 6750 5800
 Connection ~ 6750 5800
 $Comp
-L R R1
+L a500kbd-rescue:R R1
 U 1 1 59E40996
 P 5850 3950
 F 0 "R1" V 5930 3950 50  0000 C CNN
@@ -570,7 +538,7 @@ F 3 "" H 5850 3950 50  0001 C CNN
 $EndComp
 Connection ~ 5850 4100
 $Comp
-L VCC #PWR5
+L a500kbd-rescue:VCC #PWR5
 U 1 1 59E40D4F
 P 5850 3800
 F 0 "#PWR5" H 5850 3650 50  0001 C CNN
@@ -590,7 +558,7 @@ ODAT
 Text Label 8100 5450 0    60   ~ 0
 OCLK
 $Comp
-L SW_Push SW1
+L a500kbd-rescue:SW_Push SW1
 U 1 1 59E5C5FC
 P 7450 3500
 F 0 "SW1" H 7500 3600 50  0000 L CNN
@@ -604,7 +572,7 @@ Wire Wire Line
 	7250 3500 6550 3500
 Connection ~ 6550 3500
 $Comp
-L GND #PWR13
+L a500kbd-rescue:GND #PWR13
 U 1 1 59E5C78A
 P 7650 3500
 F 0 "#PWR13" H 7650 3250 50  0001 C CNN
@@ -622,4 +590,20 @@ Wire Notes Line
 	8400 4800 8400 5650
 Wire Notes Line
 	8400 5650 7700 5650
+Wire Wire Line
+	6050 3250 6300 3250
+Wire Wire Line
+	7350 4550 8100 4550
+Wire Wire Line
+	7450 4750 8300 4750
+Wire Wire Line
+	8200 4250 8300 4250
+Wire Wire Line
+	6850 6300 5800 6300
+Wire Wire Line
+	6750 5800 8500 5800
+Wire Wire Line
+	5850 4100 6550 4100
+Wire Wire Line
+	6550 3500 6550 3250
 $EndSCHEMATC
