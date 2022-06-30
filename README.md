@@ -20,7 +20,7 @@ Directory structure:
   * `hw` - hardware: kicad files and pdf schematics.
   * `fw` - firmware for the AVR microcontroller.
 
-Project website: http://nuclear.mutantstargoat.com/hw/a500kbd
+Project website: http://nuclear.mutantstargoat.com/hw/amiga/a500kbd
 
 License
 -------
