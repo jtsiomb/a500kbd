@@ -77,9 +77,14 @@ void amikb_sendkey(unsigned char keycode, int press)
 	}
 }
 
+static unsigned char resetting;
+
 void amikb_reset(void)
 {
 	cli();
+	resetting = 1;
+	sei();
+
 	PORTD &= ~ARST_BIT;
 	DDRD |= ARST_BIT;
 	_delay_ms(10);
@@ -88,6 +93,9 @@ void amikb_reset(void)
 
 	prev_keycode = 0xff;
 	capslk = 0;
+
+	cli();
+	resetting = 0;
 	sei();
 }
 
@@ -126,6 +134,8 @@ ISR(INT1_vect)
 {
 	static unsigned char value;
 	static int nbits;
+
+	if(resetting) return;
 
 	value <<= 1;
 	if(PIND & ADATA_BIT) {

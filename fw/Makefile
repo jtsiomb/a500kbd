@@ -4,8 +4,10 @@ bin = a500kbd
 hex = $(bin).hex
 eep = $(bin).eep
 
-mcu_gcc = atmega168
-mcu_dude = m168
+#mcu_gcc = atmega168
+#mcu_dude = m168
+mcu_gcc = atmega88p
+mcu_dude = m88p
 
 CC = avr-gcc
 OBJCOPY = avr-objcopy
