@@ -5,3 +5,14 @@
 *.bck
 *.dcm
 *-cache.lib
+*.eep
+*.hex
+*.map
+*.zip
+fw/a500kbd
+*.sch-bak
+*.kicad_prl
+fp-info-cache
+fp-lib-table
+sym-lib-table
+gerber/
