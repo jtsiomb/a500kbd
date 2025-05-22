@@ -6,7 +6,7 @@
 	(paper "A5" portrait)
 	(title_block
 		(title "Amiga A500 - PS/2 keyboard controller")
-		(date "2025-05-20")
+		(date "2025-05-23")
 		(rev "2")
 		(company "Mutant Stargoat")
 		(comment 1 "Creative Commons Attribution Share-Alike (CC BY-SA)")
@@ -4513,7 +4513,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1x8 pin header 2.54mm female"
 			(at 55.88 116.84 0)
 			(effects
 				(font
@@ -4729,7 +4729,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Switch, dual pole double throw, separate symbols"
+		(property "Description" "SPDT switch"
 			(at 100.33 115.57 0)
 			(effects
 				(font
@@ -4875,7 +4875,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "22pF ceramic capacitor"
 			(at 59.69 68.58 0)
 			(effects
 				(font
@@ -5140,7 +5140,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Atmel 6-pin ISP connector"
+		(property "Description" "6-pin IDC connector male"
 			(at 82.55 52.07 0)
 			(effects
 				(font
@@ -5221,7 +5221,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Two pin crystal"
+		(property "Description" "14.7456MHz crystal HC49"
 			(at 53.34 60.96 0)
 			(effects
 				(font
@@ -5290,7 +5290,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1x8 pin header 2.54mm male"
 			(at 128.27 116.84 0)
 			(effects
 				(font
@@ -5376,7 +5376,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Switch, dual pole double throw, separate symbols"
+		(property "Description" "SPDT switch"
 			(at 100.33 105.41 0)
 			(effects
 				(font
@@ -5455,7 +5455,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "6-pin IDC connector male"
 			(at 110.49 49.53 0)
 			(effects
 				(font
@@ -5536,7 +5536,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "22pF ceramic capacitor"
 			(at 53.34 68.58 0)
 			(effects
 				(font
@@ -5863,7 +5863,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "6pin Mini-DIN female connector"
 			(at 95.25 77.47 0)
 			(effects
 				(font
@@ -5943,7 +5943,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
+		(property "Description" "1x4 pin header 2.54mm male"
 			(at 74.93 72.39 0)
 			(effects
 				(font
@@ -6018,7 +6018,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "4.7k 1/4W resistor"
 			(at 48.26 76.2 0)
 			(effects
 				(font
@@ -6086,7 +6086,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20MHz, 8kB Flash, 1kB SRAM, 512B EEPROM, DIP-28"
+		(property "Description" "ATmega88/168/328 microcontroller"
 			(at 29.21 72.39 0)
 			(effects
 				(font
@@ -6233,7 +6233,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1uF ceramic capacitor"
 			(at 24.13 134.62 0)
 			(effects
 				(font
@@ -6302,7 +6302,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "4.7k 1/4W resistor"
 			(at 110.49 88.9 0)
 			(effects
 				(font
@@ -6369,7 +6369,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "6-pin IDC connector male"
 			(at 110.49 58.42 0)
 			(effects
 				(font
@@ -6775,7 +6775,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "4.7k 1/4W resistor"
 			(at 105.41 88.9 0)
 			(effects
 				(font
@@ -6844,7 +6844,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1uF ceramic capacitor"
 			(at 31.75 134.62 0)
 			(effects
 				(font
