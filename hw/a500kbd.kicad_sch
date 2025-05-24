@@ -5822,7 +5822,8 @@
 	)
 	(symbol
 		(lib_id "a500kbd:ps2conn")
-		(at 95.25 77.47 90)
+		(at 95.25 77.47 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5830,7 +5831,7 @@
 		(dnp no)
 		(uuid "9ab78db9-b01c-43a1-aed3-4641beb1c1af")
 		(property "Reference" "U3"
-			(at 88.9 83.312 0)
+			(at 101.6 83.312 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -5846,7 +5847,7 @@
 			)
 		)
 		(property "Footprint" "a500kbd:minidin6"
-			(at 113.538 78.994 0)
+			(at 76.962 78.994 0)
 			(effects
 				(font
 					(size 1.524 1.524)
